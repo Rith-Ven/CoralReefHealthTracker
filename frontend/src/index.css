@@ -1,0 +1,12 @@
+:root {
+  --font-main: 'Outfit', -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+}
+
+#root {
+  min-height: 100vh;
+}
