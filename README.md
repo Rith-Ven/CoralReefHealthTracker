@@ -1,52 +1,70 @@
-# Coral Reef Health Tracker 🌊🐠
+# Coral Reef Health Tracker (CRHT)
 
-A full-stack application for monitoring and tracking the health of coral reefs worldwide.
+A professional, full-stack analytical platform designed for marine researchers and conservationists to monitor, document, and analyze coral reef health indicators globally.
 
-## 📂 Project Structure
+## 📌 Project Overview
 
-- **`/backend`**: FastAPI (Python) API for data management and SQLite storage.
-- **`/frontend`**: React (TypeScript) application for visualization and logging.
+The Coral Reef Health Tracker provides a centralized interface for environmental data collection and longitudinal health analysis. By leveraging real-time data visualization, the platform enables users to identify critical correlations between water temperature and coral bleaching events, facilitating informed conservation strategies.
 
-## 🚀 One-Command Start
+## ✨ Key Features
 
-To run both the frontend and backend together:
+- **Unified Monitoring Dashboard**: A single-page interface for managing multiple reef locations, viewing historical data, and logging new observations.
+- **Advanced Data Visualization**: Interactive time-series analysis comparing water temperature gradients against coral bleaching percentages.
+- **Field Observation Logging**: Standardized data entry for temperature, bleaching levels, and biodiversity indices.
+- **Optimized User Experience**: Employs the 'Outfit' typeface for high legibility and a specialized maritime-themed UI.
+- **Dynamic Reef Management**: Seamless creation and deletion of reef profiles with instant state synchronization.
 
-1. **Install Dependencies** (First time only):
+## 🚀 Technical Architecture
+
+- **Frontend**: React 19 (TypeScript), Vite, Recharts, React Router 7.
+- **Backend**: FastAPI (Python), SQLAlchemy ORM, Pydantic.
+- **Persistence**: SQLite (Relational Database).
+- **Typography**: Outfit (Google Fonts).
+
+## 🛠️ Installation & Deployment
+
+### Prerequisites
+- Python 3.10 or higher
+- Node.js 18.x or higher
+- npm or yarn
+
+### Backend Setup
+1. Navigate to the project root directory.
+2. Install the required Python dependencies:
    ```bash
-   npm run install:all
+   pip install fastapi uvicorn sqlalchemy pydantic
    ```
-
-2. **Start the Application**:
+3. Initialize the database and start the API server:
    ```bash
-   npm start
+   python3 main.py
    ```
-   *This will start the backend at `http://localhost:8080` and the frontend at `http://localhost:5173`.*
+   *The backend will be accessible at `http://localhost:8081`.*
 
-## 🛠️ Manual Start (Alternative)
+### Frontend Setup
+1. Navigate to the `/frontend` directory:
+   ```bash
+   cd frontend
+   ```
+2. Install the Node.js dependencies:
+   ```bash
+   npm install
+   ```
+3. Execute the development server:
+   ```bash
+   npm run dev
+   ```
+   *The application will be accessible at `http://localhost:5173`.*
 
-If you prefer to run them in separate terminals:
+## 📂 System Structure
 
-**Backend:**
-```bash
-cd backend
-python main.py
-```
+- `/` : Root directory containing the FastAPI backend service and SQLite database.
+- `/frontend` : React application source code, including components, assets, and API service layers.
 
-**Frontend:**
-```bash
-cd frontend
-npm run dev
-```
+## 🔧 Troubleshooting
 
-## ✨ Features
-- **Reef Management**: Add, view, and delete specific coral reefs.
-- **Detailed Observations**: Log temperature, bleaching percentages, and biodiversity scores.
-- **Trend Visualization**: Interactive charts showing health trends.
-- **Split Detail View**: Dedicated pages for analyzing historical trends and logging new field data.
-- **Modern UI**: Clean interface built with the **Outfit** font.
+- **Port Conflicts**: The backend is configured to run on port **8081** to prevent interference with standard system services.
+- **Database Access**: Ensure the `reef_tracker.db` file is not locked by external database management software during runtime.
+- **API Connectivity**: Verify that both the backend and frontend servers are active simultaneously to ensure proper data synchronization.
 
-## 📝 Troubleshooting
-If the "Create Reef" button hangs:
-1. Ensure the backend terminal shows "Uvicorn running on http://0.0.0.0:8080".
-2. Check that no other process is using port 8080 (`lsof -i :8080`).
-3. Ensure `reef_tracker.db` is not opened in any other software.
+## 📝 License
+This project is distributed under the MIT License for educational and environmental conservation efforts.

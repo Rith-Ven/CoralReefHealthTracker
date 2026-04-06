@@ -1,25 +1,19 @@
-# Coral Reef Health Tracker - Frontend
+# CRHT Frontend Service
 
-This is the React-based frontend for the Coral Reef Health Tracker.
+This directory contains the client-side implementation of the Coral Reef Health Tracker.
 
-## 🛠 Features
-- **Reef Dashboard**: Overview of all monitored reefs.
-- **Split Detail View**: Dedicated tabs for **Trends** (charts and history) and **Logging** (form entry).
-- **Interactive Charts**: Powered by `recharts` to visualize the relationship between water temperature and coral bleaching.
-- **Responsive Navigation**: Seamless transitions between reefs and views.
+## 🖥️ Technology Stack
+- **Framework**: React 19 (TypeScript)
+- **Build Tool**: Vite
+- **Data Visualization**: Recharts
+- **Styling**: Vanilla CSS (Variables & Flexbox/Grid)
 
-## 🏗 Setup
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start development server:
-   ```bash
-   npm run dev
-   ```
+## ⚙️ Configuration
+The frontend is pre-configured to communicate with the backend service at `http://localhost:8081`. This setting is managed within `src/api.ts`.
 
-## 🎨 Styling
-The project uses **Vanilla CSS** with CSS Variables for consistent branding. The primary typeface is **Outfit**, a modern geometric sans-serif.
-
-## 🔗 API Connection
-The frontend connects to the FastAPI backend at `http://localhost:8080`. This can be configured in `src/api.ts`.
+## 🏃 Execution
+To initiate the development environment:
+```bash
+npm install
+npm run dev
+```
