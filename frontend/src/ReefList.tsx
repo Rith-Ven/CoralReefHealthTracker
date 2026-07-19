@@ -24,7 +24,7 @@ function ReefList() {
   const [editingObsId, setEditingObsId] = useState<number | null>(null);
   const [editFormData, setEditFormData] = useState<ObservationUpdate>({});
 
-  const [isLoading, setIsLoading] = useState(true);
+  const [_isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetchReefs();
