@@ -1,4 +1,4 @@
-# Coral Reef Health Tracker (CRHT)
+# [Coral Reef Health Tracker (CRHT)]([url](https://coral-reef-health-tracker.vercel.app/))
 
 <img width="2542" height="926" alt="image" src="https://github.com/user-attachments/assets/f5569f83-5220-40da-aeee-1e8285940996" />
 
