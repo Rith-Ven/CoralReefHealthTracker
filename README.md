@@ -1,5 +1,8 @@
 # Coral Reef Health Tracker (CRHT)
 
+<img width="2542" height="926" alt="image" src="https://github.com/user-attachments/assets/f5569f83-5220-40da-aeee-1e8285940996" />
+
+
 A professional, full-stack analytical platform designed for marine researchers and conservationists to monitor, document, and analyze coral reef health indicators globally.
 
 ## Project Overview
